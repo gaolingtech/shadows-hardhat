@@ -1,5 +1,10 @@
 # shadows-hardhat
 
+安装hardhat
+```
+npm init -y
+npm install --save-dev hardhat 
+```
 
 编译合约
 ```
