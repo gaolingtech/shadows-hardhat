@@ -5,6 +5,19 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.3.0",
     "ethers": "^5.0.32",
-    "hardhat": "^2.1.1"
-  }
+    "hardhat": "^2.1.2"
+  },
+  "name": "test",
+  "description": "安装hardhat\r ```\r npm init -y\r npm install --save-dev hardhat \r ```",
+  "version": "1.0.0",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }

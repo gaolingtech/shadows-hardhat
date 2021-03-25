@@ -12,7 +12,7 @@ task("accounts", "Prints the list of accounts", async () => {
 });
 
 
-const ROPSTEN_PRIVATE_KEY = "0a052d705e5f027bb519f816b3622afc87bd0f833e739a1e3f7719adab6acd20";
+const ROPSTEN_PRIVATE_KEY = "665c5c10437cc1220b805b3b6d015c82f476e1d8144f08ba85840eddf4b903a5";
 
 /**
  * @type import('hardhat/config').HardhatUserConfig
@@ -22,12 +22,16 @@ module.exports = {
   networks: {
     dev: {
       url: `http://119.45.201.48:9933`,
-      chainId: 9909,
       accounts: [`0x${ROPSTEN_PRIVATE_KEY}`]
     },
     moonbase: {
       url: `https://rpc.testnet.moonbeam.network`,
       chainId: 1287,
+      accounts: [`0x${ROPSTEN_PRIVATE_KEY}`]
+    },
+    local: {
+      url: `http://127.0.0.1:9933`,
+      chainId: 888,
       accounts: [`0x${ROPSTEN_PRIVATE_KEY}`]
     }
   }
